@@ -1,0 +1,21 @@
+# Node dependencies
+node_modules/
+.next/
+out/
+build/
+
+# Python dependencies & environments
+.venv/
+env/
+venv/
+__pycache__/
+*.pyc
+
+# Local Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+
+# Project specific temporary static dumps
+backend/app/temp/
+backend/app/static/morphed_*
