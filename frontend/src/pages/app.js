@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function LiquidAtelierUI() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [style, setStyle] = useState('Liquid Architecture');
+  const [vibe, setVibe] = useState('Grand Corporate Hall'); // Default setting matching backend
   const [loading, setLoading] = useState(false);
   const [morphedImage, setMorphedImage] = useState(null);
   const [error, setError] = useState(null);
@@ -30,12 +31,13 @@ function LiquidAtelierUI() {
     const formData = new FormData();
     formData.append('image', selectedFile);
     formData.append('style', style);
+    formData.append('vibe', vibe); // Upgraded incoming options passed seamlessly
 
     try {
-      console.log("📡 Sending data to FastAPI...");
+      console.log(`📡 Sending data to FastAPI with Style: ${style} | Vibe/Scale: ${vibe}...`);
       const response = await fetch('http://127.0.0.1:8000/api/morph', {
         method: 'POST',
-        body: formData, // Headers set karne ki zaroorat nahi hai, browser automatic multipart/form-data handles karega
+        body: formData, // Headers automatic handle ho jayenge
       });
 
       const data = await response.json();
@@ -65,12 +67,35 @@ function LiquidAtelierUI() {
           <input type="file" accept="image/*" onChange={handleFileChange} />
         </div>
 
-        <div style={{ marginBottom: '20px' }}>
+        {/* 🎨 UPGRADED: Expanded Visionary Styles */}
+        <div style={{ marginBottom: '16px' }}>
           <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>Select Visionary Style:</label>
           <select value={style} onChange={(e) => setStyle(e.target.value)} style={{ padding: '8px', width: '100%', borderRadius: '6px' }}>
             <option value="Liquid Architecture">Liquid Architecture (House of Prajapati Concept)</option>
+            <option value="Parametric Fluidity">Parametric Fluidity (Zaha Hadid Inspired)</option>
+            <option value="Biophilic Cyberpunk">Biophilic Cyberpunk (Neon + Nature)</option>
+            <option value="Futuristic Brutalism">Futuristic Brutalism (Monolithic Concrete)</option>
+            <option value="Luxury Minimalist">Luxury Minimalist (Premium Matte & Gold)</option>
             <option value="Modern Minimalist">Modern Minimalist</option>
             <option value="Biophilic Design">Biophilic Design</option>
+          </select>
+        </div>
+
+        {/* 🏢 UPGRADED: Expanded Room Types and Spatial Scales */}
+        <div style={{ marginBottom: '20px' }}>
+          <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>Select Space Type / Scale:</label>
+          <select value={vibe} onChange={(e) => setVibe(e.target.value)} style={{ padding: '8px', width: '100%', borderRadius: '6px', border: '1px solid #000' }}>
+            {/* Commercial & Large Scale */}
+            <option value="Grand Corporate Hall">Grand Corporate Hall (Bade Halls / Open Spaces)</option>
+            <option value="Luxury Fashion Atelier">Luxury Fashion Atelier (Studio / Display Gallery)</option>
+            <option value="Futuristic Restaurant Lounge">Futuristic Restaurant Lounge (Fine Dining / Bar)</option>
+            
+            {/* Professional & Medium Scale */}
+            <option value="Executive Cabin">Executive Cabin (Private Workspace / Office)</option>
+            
+            {/* Residential & Living Scale */}
+            <option value="Avant-Garde Living Room">Avant-Garde Living Room (Premium Residential Lounge)</option>
+            <option value="Master Bedroom Suite">Master Bedroom Suite (Luxury Bedding & Fluid Walk-in)</option>
           </select>
         </div>
 
