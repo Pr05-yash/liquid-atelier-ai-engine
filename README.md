@@ -1,38 +1,24 @@
-# Liquid Atelier AI Engine 🔮📐
+# Liquid Atelier AI Engine 🔮
+> **Computational Space & AI Virtual Staging Node**
 
-An advanced generative AI full-stack pipeline that transforms traditional architectural spaces into high-end, computational **Liquid Architecture** layouts. Built with a robust FastAPI asynchronous/synchronous routing backend and a highly responsive Next.js frontend wrapper.
-
----
-
-## 🚀 Before / After Transformation
-
-| Original Base Canvas | AI Morphed Masterpiece (Liquid Architecture) |
-| :---: | :---: |
-| <img src="./frontend/public/base%20room.jpg" width="400" alt="Original Space"/> | <img src="./frontend/public/morphed_demo.webp" width="400" alt="Morphed Space"/> |
-
-*Note: Replace the image source paths with your actual asset links once you commit your sample images to the repo!*
+Liquid Atelier is a cutting-edge, end-to-end AI virtual staging platform designed to transform raw architectural structures into fluid, visionary spaces. Built for the modern designer, it allows users to upload any spatial base canvas and instantly render it using futuristic design languages—featuring concepts like **Liquid Architecture** (inspired by the House of Prajapati brand concept) and **Parametric Fluidity**.
 
 ---
 
-## 🛠️ System Architecture & Tech Stack
+## ✨ Features
 
-### Backend Infrastructure (FastAPI)
-- **High Performance:** Async route design to manage heavy multipart image form data effortlessly.
-- **Headless Pipeline:** Custom dynamic network abstraction integrated with the **Flux Engine (Latent Diffusion)** via distributed serverless structures.
-- **CORS Middleware:** Secured and tailored cross-origin access rules for strict frontend interaction.
-
-### Frontend Layer (Next.js 14)
-- **Framework:** Next.js with React 18 for server-side stability and optimization.
-- **State Management:** Reactive component rendering with real-time feedback loops for long-polling API cycles.
+- **Visionary Architectural Styles:** Choose from premium pre-mapped prompts like *Liquid Architecture*, *Parametric Fluidity (Zaha Hadid Inspired)*, *Biophilic Cyberpunk*, and *Futuristic Brutalism*.
+- **Multi-Scale Spatial Adaptability:** Seamlessly transforms spaces across multiple scales—from *Grand Corporate Halls* and *Luxury Fashion Ateliers* to premium *Master Bedroom Suites*.
+- **Glassmorphic Studio UI:** A premium, dark-themed, ultra-minimalist interactive dashboard optimized for creative professionals.
+- **Asynchronous AI Rendering:** Connects directly to a high-speed FastAPI backend powered by advanced generative diffusion models via Pollinations AI.
 
 ---
 
-## ⚡ Quick Setup & Installation
+## 🏗️ Project Architecture
 
-### 1. Backend Setup
-```bash
-cd backend/app
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
+The system is cleanly separated into two distinct, scalable modules:
+
+```text
+liquid-atelier-ai-engine/
+├── frontend/     # Next.js Application (Pages Router Setup)
+└── backend/      # FastAPI Server (Python Prompt Engineering & Image Generation)
