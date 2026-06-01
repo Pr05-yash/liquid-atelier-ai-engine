@@ -9,9 +9,9 @@ Liquid Atelier is a cutting-edge, end-to-end AI virtual staging platform designe
 
 | Original Base Canvas | AI Morphed Masterpiece (Liquid Architecture) |
 | :---: | :---: |
-| <img src="frontend/public/base_room.jpg" width="100%" alt="Original Base Canvas"> | <img src="frontend/public/morphed_output.jpg" width="100%" alt="AI Morphed Masterpiece"> |
+| <img src="<img width="1000" height="571" alt="base room" src="https://github.com/user-attachments/assets/5ac054b1-148f-423f-97ea-a012aedfc8a9" />" width="100%" alt="Original Base Canvas"> | <img src="<img width="768" height="768" alt="morphed_1780295168" src="https://github.com/user-attachments/assets/177c3cc0-7ede-4d38-9569-606106833b8f" />
 
-> 💡 **Note for Repository Customization:** App ke images ko README mein live dikhane ke liye, apni original photo aur generated output photo ko frontend ke `public/` folder mein daal kar GitHub par push kar dena, ya fir direct image link yahan `src="..."` mein replace kar dena!
+" width="100%" alt="AI Morphed Masterpiece"> |
 
 ---
 
