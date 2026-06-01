@@ -8,7 +8,7 @@ An advanced generative AI full-stack pipeline that transforms traditional archit
 
 | Original Base Canvas | AI Morphed Masterpiece (Liquid Architecture) |
 | :---: | :---: |
-| <img src="./frontend/public/base_room.png" width="400" alt="Original Space"/> | <img src="./frontend/public/morphed_demo.webp" width="400" alt="Morphed Space"/> |
+| <img src="./frontend/public/base%20room.jpg" width="400" alt="Original Space"/> | <img src="./frontend/public/morphed_demo.webp" width="400" alt="Morphed Space"/> |
 
 *Note: Replace the image source paths with your actual asset links once you commit your sample images to the repo!*
 
